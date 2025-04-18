@@ -10,5 +10,6 @@ The fNIRS96 datasets used in this paper is available at:
 
 [Google Drive Download Link](https://drive.google.com/file/d/1WDcfG2IWhQ6TkDl8ropND9B7aM1eYCXG/view?usp=drive_link)
 
-The dataset contains raw light intensity signals collected by the NIR device. Please preprocess the data before running the code.
-
+The dataset contains raw light intensity signals collected by the NIR device.  
+Please preprocess the data and place the processed files into `DuTAP/data/fill_nan/`.  
+The processed data should be in the shape of **159 × 15000** (i.e., `channels × 3 × timestamps`).
