@@ -43,8 +43,6 @@ class FNIRSData(Dataset):
     def __init__(self, data_path, mode):
         self.data_path = data_path
         self.hb_path = os.path.join(data_path, 'fill_nan')
-        self.sta_path = os.path.join(data_path, 'sta_feature')
-        self.relation_path = os.path.join(data_path, 'relation')
         self.id_path = os.path.join(data_path, rf'{mode}.txt')
         self.label = load_label(self.id_path, mode)
         self.mode = mode
